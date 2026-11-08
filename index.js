@@ -39,7 +39,7 @@ const rate = b => b < 1024 ? Math.round(b) + ' o/s' : b < 1048576 ? Math.round(b
 const pct = v => Math.round(v) + ' %';
 const fmtAgo = s => s < 60 ? s + ' s' : (s / 60 | 0) + ' min ' + String(s % 60).padStart(2, '0') + ' s';
 const HIST = 300, hist = {cpu: [], mem: [], down: [], up: []};
-// Line chart drawn in pixel steps: series = [{label, color: CSS variable, data, fmt}], newest value on the right, one sample per second.
+// Line chart drawn in steps: series = [{label, color: CSS variable, data, fmt}], newest value on the right, one sample per second.
 // max: top of the scale (null = from the data). Hovering shows a crosshair and the values at that moment.
 function lineChart(cv, series, max) {
   cv._args = [series, max];
