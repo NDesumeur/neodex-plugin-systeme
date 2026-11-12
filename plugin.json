@@ -10,6 +10,7 @@
   "neobase": ">=4.0.0",
   "type": "app",
   "category": "Système",
+  "compatibility": ["windows", "linux"],
   "syncMode": "aucune",
   "syncInfo": "Rien : tout est mesuré en direct.",
   "mobile": false,
